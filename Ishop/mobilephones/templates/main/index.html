@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<h1> Интернет магазин техники</h1>
+<h3>В магазине представлены телефоны</h3>
+{% for mobile_phone in mobiles %}
+  <h3>{{ mobile_phone.author.get_full_name }}</h3>
+  <p>{{ mobile_phone.name }}, {{ mobile_phone.price }}</p>
+{% endfor %}
+</body>
+</html>

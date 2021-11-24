@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+{% for mobile_phone in mobile_phones %}
+  <h3>{{ mobile_phone.manager.get_full_name }}</h3>
+  <p>{{ mobile_phone.name }}, {{ mobile_phone.price }}</p>
+{% endfor %}
+</body>
+</html>
